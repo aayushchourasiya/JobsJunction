@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\NIIT\Online Classes\Term-6 Capstone project\JOBS JUNCTION\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+896051867.index
+1638128674.index
+2290822791.index
+2031278553.index
+494699523.index
+2724013796.index

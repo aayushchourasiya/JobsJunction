@@ -1,0 +1,123 @@
+#registrationDiv{
+	background-color: #d7dbdd;
+	color: black;
+	font-family: verdana;
+	border-style: ridge; 
+	margin-top: 0.3%;
+}
+input[type=text], input[type=email], input[type=password]{
+	background-color: white;
+	border: 2pt solid black;
+	border-radius: 5pt;
+	transition: border-radius 0.4s ease-in-out;
+	outline: none;
+	}
+input[type=text]:focus{
+	background-color: lightblue;
+	border-radius: 15pt;
+	}
+input[type=email]:focus{
+	background-color: lightblue;
+	border-radius: 15pt;
+}
+input[type=password]:focus{
+	background-color: lightblue;
+	border-radius: 15pt;
+}
+input[type=submit]{
+	font-family: verdana;
+	background-color: black;
+	color: white;
+	border: 2pt solid white;
+	border-radius: 5pt;
+	outline: none;
+}
+input[type=submit]:hover{
+	color: black;
+	background-color: lightblue;
+	border-color: black; 
+}
+input[type=text]:hover{
+	background-color: lightblue;
+}
+input[type=email]:hover{
+	background-color: lightblue;
+}
+input[type=password]:hover{
+	background-color: lightblue;
+}
+@media only screen and (min-width: 768px){
+	#registrationDiv{
+		height: 75vh;
+	}
+	form{
+		margin-top: 5%;	
+		margin-left: -5%;
+	}
+	input[type=text],input[type=email],input[type=password]{
+		width: 150%;
+		padding: 5%;
+	}
+	input[type=submit]{
+		width: 120%;
+		padding: 5%;
+		font-size: 100%;
+		margin-left: 20%;
+		margin-top: 4%;
+	}
+}
+@media only screen and (max-width: 768px) and (orientation: portrait){
+	form{
+		margin-top: 10%;
+		margin-left: 10%;
+	}
+	form h2{
+		margin-left: -4%;
+	}
+	input[type=submit]{
+		width: 100%;
+		padding: 3%;
+		font-size: 100%;
+		margin-top: 4%;
+		margin-left: 20%;
+	}
+	input[type=text],input[type=email],input[type=password]{
+		width: 130%;
+		padding: 3%;
+	}
+	.mobileCSS{
+		font-size: 12pt;
+	}
+	#registrationDiv{
+		height: 78vh;
+	}
+}
+@media only screen and (max-width: 768px) and (orientation: landscape){
+	form{
+		margin-top: -3%;
+	}
+	#registrationDiv{
+		height: 100vh;
+	}
+	input[type=text],input[type=email],input[type=password]{
+		width: 150%;
+		padding: 3%;
+	}
+	input[type=submit]{
+		width: 100%;
+		padding: 3%;
+		font-size: 100%;
+		margin-top: 4%;
+		margin-left: 25%;
+	}
+}
+@media only screen and (max-width: 600px) and (orientation: portrait){
+	#registrationDiv{
+		height: 85vh;
+	}
+}
+@media only screen and (max-width: 600px) and (orientation: landscape){
+	#registrationDiv{
+		height: 120vh;
+	}
+}

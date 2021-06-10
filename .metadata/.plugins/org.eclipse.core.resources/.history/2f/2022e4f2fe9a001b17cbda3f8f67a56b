@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome ${username}!</title>
+<link rel="stylesheet" href="resources/css/loginSuccess.css">
+<style type="text/css">
+</style>
+</head>
+<body>
+<%
+	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+	response.setHeader("Pragma","no-cache");    
+	response.setHeader("Expires", "0");
+%>
+	<input type="hidden" id="hidden" value="${username}">
+	<jsp:include page="index.jsp"></jsp:include>
+	<script type="text/javascript">
+
+		//This coding part is for getting previous values and working with it!	
+		var hidden = document.getElementById("hidden").value;
+		var userName = document.getElementById("loginLink");
+		userName.innerHTML = hidden;
+		userName.removeAttribute("href");
+		userName.style.cursor = "pointer";
+		userName.addEventListener("mouseover" , mouseOver);
+		function mouseOver(){
+				userName.innerHTML = "Log Out!";
+			}
+		userName.addEventListener("mouseout" , mouseOut);
+		function mouseOut(){
+				userName.innerHTML = hidden;
+			}
+		userName.addEventListener("click" , logOut);
+		function logOut(){
+				document.location.href = "logoutPage";
+			}
+		//This method is forwarding to the next page! As there is no next page 
+		//when this page is loaded first time, it is not forwarding!
+		function preventBack() { window.history.forward(); }
+		setTimeout("preventBack()", 0);
+
+		
+	</script>
+</body>
+</html>
+
+	
+	

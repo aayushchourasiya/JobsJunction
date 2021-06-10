@@ -1,0 +1,81 @@
+html,body{
+		margin:0;
+		padding:0;
+	}
+	footer{
+		text-align: center;
+		background-color: black;
+		color: white;
+		font-family:verdana;
+		padding: 1%;
+		justify-content: center;
+		display:flex;
+	}
+#jobDiv{
+	border-style: ridge;
+	background-color: #d7dbdd;
+	}
+#candidateDiv{
+	border-style: ridge;
+	background-color: #d7dbdd;
+	}
+@media only screen and (min-width: 768px){
+	#navbar{
+		background-color: black;
+		overflow: hidden;
+	}
+	#navbar a{
+		float: right;
+		color: white;
+		text-align: center;
+		padding: 1%;
+		text-decoration: none;
+		font-size: 17pts;
+		margin:1%;
+		font-family: verdana;
+	}
+	#navbar a:hover{
+		color: yellow; 
+	}
+	#jobDiv{
+		float: left;
+		width: 100%;
+		height: 80vh;
+		margin-top: 0.3%;
+	}
+	#candidateDiv{
+		float: left;
+		width: 0%;
+		height: 80vh;
+		margin-top: 0.3%;
+	}
+}
+@media only screen and (max-width: 768px){
+	#navbar{
+		background-color: black;
+		overflow: hidden;
+	}
+	#navbar a{
+		float: right;
+		color: white;
+		text-align: center;
+		padding: 1%;
+		margin: 5%;
+		text-decoration: none;
+		font-size: 17px;
+		font-family: verdana;
+	}
+	#navbar a:hover{
+		color: yellow; 
+	}
+	#jobDiv{
+		width: 100%;
+		height: 80vh;
+		margin-top: 0.3%;
+	}
+	#candidateDiv{
+		width:100%;
+		height: 80vh;
+		margin-top: 0.3%;
+	}
+}
